@@ -1,3 +1,0 @@
-# Generated docker monitoring schedule:
-10 0 * * 1 /usr/local/emhttp/plugins/dynamix.docker.manager/scripts/dockerupdate check &> /dev/null
-

@@ -1,3 +1,0 @@
-# Generated plugins version check schedule:
-10 0 * * 1 /usr/local/emhttp/plugins/dynamix.plugin.manager/scripts/plugincheck &> /dev/null
-
