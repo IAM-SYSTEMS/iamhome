@@ -1,0 +1,106 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/v5/search for icons options
+
+title: "Server Name"
+subtitle: "IAMHOME"
+logo: "/assets/icons/IAMHome-Logo.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+
+header: true
+footer: '<p>Powered by <a href="http://iamsystems.com.au">IAM Systems</a></p>' # set false if you want to hide it.
+
+# Optional theme customization
+theme: default
+colors:
+  light:
+    highlight-primary: "#ffffff"
+    highlight-secondary: "#00b2e2"
+    highlight-hover: "#ffffff"
+    background: "#ffffff"
+    card-background: "#ffffff"
+    text: "#5a666f"
+    text-header: "##00b2e2"
+    text-title: "#00b2e2"
+    text-subtitle: "#2b2b2b"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#13131"
+    highlight-secondary: "#00b2e2"
+    highlight-hover: "#2b2b2b"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#ffffff"
+    text-header: "##00b2e2"
+    text-title: "#00b2e2"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+
+# Optional message
+#message:
+#  #url: https://b4bz.io
+#  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+#  title: "Demo !"
+#  icon: "fa fa-grin"
+#  content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "System Administration"
+    icon: "fas fa-tools"
+    url: "url-loc"
+
+  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+  # see url field and assets/additional-page.yml.dist used in this example:
+  #- name: "another page!"
+  #  icon: "fas fa-file-alt"
+  #  url: "#additional-page" 
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Applications"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Scrypted"
+        logo: "https://www.scrypted.app/images/web_hi_res_512.png"
+        subtitle: "Scrypted NVR & HKSV"
+        tag: "NVR/VMS"
+        keywords: "scrypted nvr"
+        url: "url-loc"
+        target: "_blank" # optional html a tag target attribute
+        
+      - name: "HomeBridge"
+        logo: "https://avatars.githubusercontent.com/u/38217527?s=48&v=4"
+        subtitle: "HomeBridge"
+        tag: "Automation Tools"
+        url: "url-loc"
+        target: "_blank" # optional html a tag target attribute
+
+      - name: "HomeAssistant"
+        logo: "https://avatars.githubusercontent.com/u/13844975?s=200&v=4"
+        subtitle: "Home Assistant"
+        tag: "Automation Tools"
+        keywords: "home assistant"
+        url: "url-loc"
+        target: "_blank" # optional html a tag target attribute        
+
+      - name: "Chromium"
+        logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chromium-logo.png"
+        subtitle: "Local Network Based Browser"
+        tag: "Browser"
+        url: "url-loc"
+        target: "_blank" # optional html a tag target attribute
+        
+      - name: "Pi.Alert"
+        logo: "https://raw.githubusercontent.com/pucherot/Pi.Alert/main/front/img/pialertLogoGray50.png"
+        subtitle: "Network Scannerr"
+        tag: "Networking"
+        url: "url-loc"
+        target: "_blank" # optional html a tag target attribute
