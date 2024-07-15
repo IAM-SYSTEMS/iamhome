@@ -2,7 +2,7 @@
 # Homepage configuration
 # See https://fontawesome.com/v5/search for icons options
 
-title: "Server Name"
+title: "Server-Name"
 subtitle: "IAMHOME"
 logo: "/assets/icons/IAMHome-Logo.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
@@ -53,7 +53,7 @@ colors:
 links:
   - name: "System Administration"
     icon: "fas fa-tools"
-    url: "url-loc"
+    url: "http://100.117.248.15"
 
   # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
   # see url field and assets/additional-page.yml.dist used in this example:
@@ -68,39 +68,45 @@ services:
   - name: "Applications"
     icon: "fas fa-cloud"
     items:
-      - name: "Scrypted"
-        logo: "https://www.scrypted.app/images/web_hi_res_512.png"
-        subtitle: "Scrypted NVR & HKSV"
-        tag: "NVR/VMS"
-        keywords: "scrypted nvr"
-        url: "url-loc"
-        target: "_blank" # optional html a tag target attribute
-        
-      - name: "HomeBridge"
-        logo: "https://avatars.githubusercontent.com/u/38217527?s=48&v=4"
-        subtitle: "HomeBridge"
-        tag: "Automation Tools"
-        url: "url-loc"
-        target: "_blank" # optional html a tag target attribute
 
       - name: "HomeAssistant"
-        logo: "https://avatars.githubusercontent.com/u/13844975?s=200&v=4"
-        subtitle: "Home Assistant"
+        logo: "https://github.com/IAM-SYSTEMS/iamhome/blob/main/icons/ha.png?raw=true"
+        subtitle: "Awaken your home"
         tag: "Automation Tools"
         keywords: "home assistant"
-        url: "url-loc"
+        url: "http://100.117.248.15:8123"
         target: "_blank" # optional html a tag target attribute        
 
-      - name: "Chromium"
-        logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chromium-logo.png"
-        subtitle: "Local Network Based Browser"
-        tag: "Browser"
-        url: "url-loc"
+      - name: "Homebridge"
+        logo: "https://github.com/IAM-SYSTEMS/iamhome/blob/main/icons/homebridge.png?raw=true"
+        subtitle: "HomeKit support for the impatient"
+        tag: "Automation Tools"
+        url: "http://100.117.248.15:8581"
         target: "_blank" # optional html a tag target attribute
-        
-      - name: "Pi.Alert"
-        logo: "https://raw.githubusercontent.com/pucherot/Pi.Alert/main/front/img/pialertLogoGray50.png"
-        subtitle: "Network Scannerr"
+
+      - name: "Scrypted"
+        logo: "https://github.com/IAM-SYSTEMS/iamhome/blob/main/icons/scrypted.png?raw=true"
+        subtitle: "Camera integration & recording platform"
+        tag: "NVR/VMS"
+        keywords: "scrypted nvr"
+        url: "http://100.117.248.15:11080"
+        target: "_blank" # optional html a tag target attribute
+             
+      - name: "Net.AlertX"
+        logo: "https://github.com/IAM-SYSTEMS/iamhome/blob/main/icons/netalertx.png?raw=true"
+        subtitle: "Network Scanner & notification tool"
         tag: "Networking"
-        url: "url-loc"
+        url: "http://100.117.248.15:20211"
+        target: "_blank" # optional html a tag target attribute
+
+  - name: "Virtual Machines"
+    icon: "fas fa-desktop"
+    items:
+
+      - name: "Windows 11 VM"
+        logo: "https://github.com/IAM-SYSTEMS/iamhome/blob/main/icons/win11.png?raw=true"
+        subtitle: "Microsoft Windows 11"
+        tag: "Win11VM"
+        keywords: "Windows 11"
+        url: "http://100.117.248.15/plugins/dynamix.vm.manager/vnc.html?v=1700086926&autoconnect=true&host=100.117.248.15&port=&path=/wsproxy/5700/"
         target: "_blank" # optional html a tag target attribute
